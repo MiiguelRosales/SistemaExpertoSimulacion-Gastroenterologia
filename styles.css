@@ -1,0 +1,35 @@
+/* Estilos personalizados separados del HTML */
+
+.fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden-screen {
+    display: none;
+}
+
+.doctor-image-wrapper {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    pointer-events: none;
+}
+
+.doctor-image-wrapper img {
+    width: var(--doctor-image-size, 420px);
+    max-width: min(80vw, var(--doctor-image-size, 420px));
+    border-radius: 36px;
+    box-shadow: 0 24px 64px rgba(15, 23, 42, 0.12);
+}
