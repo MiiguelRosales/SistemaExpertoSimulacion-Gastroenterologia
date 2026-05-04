@@ -114,19 +114,47 @@
                             <h2 class="text-2xl font-bold text-slate-800">Evaluación Completada</h2>
                         </div>
 
-                        <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 mb-6">
-                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Diagnóstico Sugerido</h4>
-                            <p id="diagnosis-text" class="text-xl font-bold text-medical-900 capitalize">
-                                <!-- Aquí va la enfermedad -->
-                                Reflujo Gastroesofágico
-                            </p>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div>
+                                        <h4 class="text-base font-bold text-slate-400 uppercase tracking-wider">Enfermedad detectada</h4>
+                                        <p class="text-sm text-slate-500">Este es el diagnóstico que resultó de la evaluación.</p>
+                                    </div>
+                                    <i class="fa-solid fa-stethoscope text-medical-500 text-3xl"></i>
+                                </div>
+                                <p id="diagnosis-text" class="text-3xl sm:text-4xl font-extrabold text-medical-900 capitalize leading-tight">
+                                    <!-- Aquí va la enfermedad -->
+                                    Reflujo Gastroesofágico
+                                </p>
+                                <p id="diagnosis-note" class="mt-4 text-base text-slate-500 leading-relaxed"></p>
+                                <div id="diagnosis-description-card" class="mt-6 bg-slate-50 border border-slate-100 rounded-3xl p-6">
+                                    <h4 class="text-base font-bold text-slate-400 uppercase tracking-wider mb-3">¿Qué es esta enfermedad?</h4>
+                                    <p id="diagnosis-description" class="text-base text-slate-700 leading-relaxed">
+                                        Aquí se mostrará una breve explicación de la enfermedad detectada.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div>
+                                        <h4 class="text-base font-bold text-slate-400 uppercase tracking-wider">Síntomas presentados</h4>
+                                        <p class="text-sm text-slate-500">Los síntomas que el paciente confirmó.</p>
+                                    </div>
+                                    <i class="fa-solid fa-heart-pulse text-medical-500 text-2xl"></i>
+                                </div>
+                                <ul id="symptom-list" class="space-y-3 text-slate-700">
+                                    <li class="px-4 py-3 bg-medical-50 rounded-2xl text-base">No se detectaron síntomas positivos.</li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div class="bg-amber-50 border border-amber-100 rounded-2xl p-6 mb-8">
-                            <h4 class="text-sm font-bold text-amber-600 uppercase tracking-wider mb-2 flex items-center gap-2">
+                            <h4 class="text-base font-bold text-amber-600 uppercase tracking-wider mb-2 flex items-center gap-2">
                                 <i class="fa-solid fa-pills"></i> Tratamiento Recomendado
                             </h4>
-                            <p id="treatment-text" class="text-slate-700 leading-relaxed">
+                            <p id="treatment-text" class="text-base text-slate-700 leading-relaxed">
                                 <!-- Aquí va el tratamiento -->
                                 Antiácidos, omeprazol y evitar cenas abundantes antes de dormir.
                             </p>
